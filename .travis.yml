@@ -1,0 +1,23 @@
+language: python
+cache: bundler
+python:
+  - 3.6
+install:
+  - eval "$(gimme 1.8)"
+  - go get github.com/ValeLint/vale
+  - bundle install --jobs=3
+  - pip install yamllint
+  - pip install markdata
+  - pip install pyyaml
+before_script:
+  - yamllint -c '.yamllint.yml' Google
+script:
+  - cucumber
+  - zip -r Google.zip Google -x "*.DS_Store"
+deploy:
+  provider: releases
+  api_key: $GITHUB_TOKEN
+  file: Google.zip
+  skip_cleanup: true
+  on:
+    tags: true

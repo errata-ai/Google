@@ -5,6 +5,7 @@
   "lang": "en",
   "url": "https://github.com/errata-ai/Google/releases/latest/download/Google.zip",
   "feed": "https://github.com/errata-ai/Google/releases.atom",
+  "issues": "https://github.com/errata-ai/Google/issues/new",
   "license": "MIT",
   "name": "Google",
   "sources": [

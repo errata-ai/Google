@@ -4,5 +4,11 @@ link: 'https://developers.google.com/style/hyphens'
 level: error
 ignorecase: false
 nonword: true
+action:
+  name: edit
+  params:
+    - replace
+    - '-'
+    - ' '
 tokens:
   - '\s[^\s-]+ly-'

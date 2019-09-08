@@ -26,11 +26,13 @@ Feature: Rules
       test.md:21:19:Google.Slang:Don't use internet slang abbreviations such as 'RTFM'.
       test.md:23:21:Google.Slang:Don't use internet slang abbreviations such as 'IMO'.
       test.md:25:1:Google.Will:Avoid using 'Will'.
+      test.md:25:18:Google.FirstPerson:Avoid first-person pronouns such as 'my'.
       test.md:27:1:Google.FirstPerson:Avoid first-person pronouns such as 'I'.
       test.md:27:3:Google.Spelling:In general, use American spelling instead of 'organised'.
       test.md:29:21:Google.WordList:Use 'preceding' instead of 'above'.
       test.md:31:1:Google.FirstPerson:Avoid first-person pronouns such as 'I'.
-      test.md:31:11:Google.WordList:Use 'phone' or 'mobile phone' instead of 'cell phone'.
+      test.md:31:8:Google.FirstPerson:Avoid first-person pronouns such as 'my'.
+      test.md:31:11:Google.WordList:Use 'phone or mobile phone' instead of 'cell phone'.
       """
 
   Scenario: Use of contractions
@@ -81,14 +83,13 @@ Feature: Rules
       test.md:5:21:Google.Parens:Use parentheses judiciously.
       test.md:7:5:Google.Colons:': C' should be in lowercase.
       test.md:9:1:Google.OxfordComma:Use the Oxford comma in 'I dedicate this book to my parents, Ayn, Rand and'.
-      test.md:11:46:Google.EmDash:Don't put a space before or after an em dash.
-      test.md:11:67:Google.Hyphens:Don't place a space on either side of a hyphen (unless it's suspended).
+      test.md:11:46:Google.EmDash:Don't put a space before or after a dash.
+      test.md:13:24:Google.EmDash:Don't put a space before or after a dash.
       test.md:13:25:Google.EnDash:Use an em dash ('—') instead of '–'.
       test.md:13:33:Google.Exclamation:Don't use exclamation points in text.
       test.md:15:5:Google.Ellipses:In general, don't use an ellipsis.
       test.md:17:12:Google.Exclamation:Don't use exclamation points in text.
       test.md:19:18:Google.LyHyphens:'publicly-' doesn't need a hyphen.
-      test.md:21:12:Google.Hyphens:Don't place a space on either side of a hyphen (unless it's suspended).
       test.md:23:13:Google.Parens:Use parentheses judiciously.
       test.md:25:24:Google.Quotes:Commas and periods go inside quotation marks.
       test.md:27:34:Google.Semicolons:Use semicolons judiciously.

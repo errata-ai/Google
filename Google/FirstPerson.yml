@@ -6,6 +6,8 @@ level: warning
 nonword: true
 tokens:
   - (?:^|\s)I\s
+  - (?:^|\s)I,\s
+  - \bI'm\b
   - \bme\b
-  - \bus\b
-  - \bours\b
+  - \bmy\b
+  - \bmine\b

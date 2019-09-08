@@ -3,6 +3,8 @@ message: "Feel free to use '%s' instead of '%s'."
 link: 'https://developers.google.com/style/contractions'
 level: suggestion
 ignorecase: true
+action:
+  name: replace
 swap:
   are not: aren't
   cannot: can't

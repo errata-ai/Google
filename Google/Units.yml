@@ -4,4 +4,5 @@ link: 'https://developers.google.com/style/units-of-measure'
 nonword: true
 level: error
 tokens:
-  - \d+(?:GB|TB|MB)
+  - \d+(?:B|kB|MB|GB|TB)
+  - \d+(?:ns|ms|s|min|h|d)

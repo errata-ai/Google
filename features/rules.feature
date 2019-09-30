@@ -32,7 +32,7 @@ Feature: Rules
       test.md:29:21:Google.WordList:Use 'preceding' instead of 'above'.
       test.md:31:1:Google.FirstPerson:Avoid first-person pronouns such as 'I'.
       test.md:31:8:Google.FirstPerson:Avoid first-person pronouns such as 'my'.
-      test.md:31:11:Google.WordList:Use 'phone or mobile phone' instead of 'cell phone'.
+      test.md:31:11:Google.WordList:Use 'phone|mobile phone' instead of 'cell phone'.
       """
 
   Scenario: Use of contractions

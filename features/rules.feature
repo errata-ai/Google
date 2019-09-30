@@ -54,6 +54,7 @@ Feature: Rules
     Then the output should contain exactly:
       """
       test.md:5:10:Google.Units:Put a nonbreaking space between the number and the unit in '64GB'.
+      test.md:6:26:Google.Units:Put a nonbreaking space between the number and the unit in '30s'.
       """
 
   Scenario: Use of numbers

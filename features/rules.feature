@@ -61,9 +61,10 @@ Feature: Rules
     Then the output should contain exactly:
       """
       test.md:3:1:Google.Ordinal:Spell out all ordinal numbers ('1st') in text.
-      test.md:3:6:Google.Ordinal:Spell out all ordinal numbers ('5th') in text.
-      test.md:3:11:Google.Ordinal:Spell out all ordinal numbers ('12th') in text.
-      test.md:3:17:Google.Ordinal:Spell out all ordinal numbers ('43rd') in text.
+      test.md:3:6:Google.Ordinal:Spell out all ordinal numbers ('2nd') in text.
+      test.md:3:11:Google.Ordinal:Spell out all ordinal numbers ('5th') in text.
+      test.md:3:16:Google.Ordinal:Spell out all ordinal numbers ('12th') in text.
+      test.md:3:22:Google.Ordinal:Spell out all ordinal numbers ('43rd') in text.
       """
 
   Scenario: Date Formatting

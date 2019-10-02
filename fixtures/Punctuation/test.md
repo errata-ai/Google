@@ -25,3 +25,5 @@ That's true (unless it's not).
 See the section titled "Care and feeding of the emu".
 
 The section’s title is too boring; change it!
+
+Apples, pears or bananas

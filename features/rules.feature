@@ -96,6 +96,7 @@ Feature: Rules
       test.md:25:24:Google.Quotes:Commas and periods go inside quotation marks.
       test.md:27:34:Google.Semicolons:Use semicolons judiciously.
       test.md:27:45:Google.Exclamation:Don't use exclamation points in text.
+      test.md:29:1:Google.OxfordComma:Use the Oxford comma in 'Apples, pears or'.
       """
 
   Scenario: Foreign words

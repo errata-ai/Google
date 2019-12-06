@@ -27,3 +27,7 @@ See the section titled "Care and feeding of the emu".
 The section’s title is too boring; change it!
 
 Apples, pears or bananas
+
+![An image](../my-image.png)
+
+Hello!

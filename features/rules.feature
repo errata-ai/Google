@@ -88,15 +88,16 @@ Feature: Rules
       test.md:11:46:Google.EmDash:Don't put a space before or after a dash.
       test.md:13:24:Google.EmDash:Don't put a space before or after a dash.
       test.md:13:25:Google.EnDash:Use an em dash ('—') instead of '–'.
-      test.md:13:33:Google.Exclamation:Don't use exclamation points in text.
+      test.md:13:32:Google.Exclamation:Don't use exclamation points in text.
       test.md:15:5:Google.Ellipses:In general, don't use an ellipsis.
-      test.md:17:12:Google.Exclamation:Don't use exclamation points in text.
+      test.md:17:11:Google.Exclamation:Don't use exclamation points in text.
       test.md:19:18:Google.LyHyphens:'publicly-' doesn't need a hyphen.
       test.md:23:13:Google.Parens:Use parentheses judiciously.
       test.md:25:24:Google.Quotes:Commas and periods go inside quotation marks.
       test.md:27:34:Google.Semicolons:Use semicolons judiciously.
-      test.md:27:45:Google.Exclamation:Don't use exclamation points in text.
+      test.md:27:44:Google.Exclamation:Don't use exclamation points in text.
       test.md:29:1:Google.OxfordComma:Use the Oxford comma in 'Apples, pears or'.
+      test.md:33:5:Google.Exclamation:Don't use exclamation points in text.
       """
 
   Scenario: Foreign words

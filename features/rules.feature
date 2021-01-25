@@ -32,7 +32,7 @@ Feature: Rules
       test.md:29:21:Google.WordList:Use 'preceding' instead of 'above'.
       test.md:31:1:Google.FirstPerson:Avoid first-person pronouns such as 'I '.
       test.md:31:8:Google.FirstPerson:Avoid first-person pronouns such as 'my'.
-      test.md:31:11:Google.WordList:Use 'phone or mobile phone' instead of 'cell phone'.
+      test.md:31:11:Google.WordList:Use 'phone' or 'mobile phone' instead of 'cell phone'.
       """
 
   Scenario: Use of contractions
@@ -98,6 +98,8 @@ Feature: Rules
       test.md:27:44:Google.Exclamation:Don't use exclamation points in text.
       test.md:29:1:Google.OxfordComma:Use the Oxford comma in 'Apples, pears or'.
       test.md:33:5:Google.Exclamation:Don't use exclamation points in text.
+      test.md:37:21:Google.Spacing:'y. T' should have one space.
+      test.md:39:42:Google.Exclamation:Don't use exclamation points in text.
       """
 
   Scenario: Foreign words

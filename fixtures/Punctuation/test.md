@@ -31,3 +31,9 @@ Apples, pears or bananas
 ![An image](../my-image.png)
 
 Hello!
+
+this is a sentence. so is this one.
+
+This sentence is okay.  This one is not.
+
+The latest version of .NET Core is awesome!

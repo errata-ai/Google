@@ -3,6 +3,7 @@ message: "Put a nonbreaking space between the number and the unit in '%s'."
 link: 'https://developers.google.com/style/units-of-measure'
 nonword: true
 level: error
+scope: sentence
 tokens:
   - \d+(?:B|kB|MB|GB|TB)
   - \d+(?:ns|ms|s|min|h|d)

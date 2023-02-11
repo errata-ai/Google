@@ -6,4 +6,4 @@ level: error
 action:
   name: remove
 tokens:
-  - '\w!(?:\s|$)'
+  - '\w+!(?:\s|$)'

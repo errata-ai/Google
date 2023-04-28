@@ -6,3 +6,5 @@ level: warning
 tokens:
   - '(?:\w+)nised?'
   - '(?:\w+)logue'
+  - '(?:\w+)tre'
+  - '(?:\w+)our'

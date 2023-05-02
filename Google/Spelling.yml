@@ -5,5 +5,4 @@ ignorecase: true
 level: warning
 tokens:
   - '(?:\w+)nised?'
-  - '(?:\w+)logue'
-  - '(?:\w+)our'
+  - 'colour'

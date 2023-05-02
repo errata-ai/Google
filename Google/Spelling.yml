@@ -6,4 +6,5 @@ level: warning
 tokens:
   - '(?:\w+)nised?'
   - 'colour'
+  - 'labour'
   - 'center'

@@ -2,28 +2,21 @@
 
 This repository contains a [Vale-compatible](https://github.com/errata-ai/vale) implementation of the [*Google Developer Documentation Style Guide*](https://developers.google.com/style/) ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)).
 
-The goal is to showcase how to build and maintain a full-featured style guide for Vale, including many examples of using [extension points](https://errata-ai.github.io/vale/styles/#extension-points) and a test suite using [Cucumber](https://cucumber.io/), [`yamllint`](https://github.com/adrienverge/yamllint), and [Travis CI](https://travis-ci.org/).
-
-![Vale version](https://img.shields.io/badge/vale-%3E%3D%20v1.0.0-blue.svg) ![license](https://img.shields.io/github/license/mashape/apistatus.svg)
-
 ## Getting Started
 
-> :exclamation: Google requires Vale >= **1.0.0**. :exclamation:
-
-Download the [latest release](https://github.com/errata-ai/Google/releases), copy the "Google" directory to your `StylesPath`, and include it in your configuration file:
+To get started, add the package to your configuration file (as shown below) and then run `vale sync`.
 
 ```ini
-# This goes in a file named either `.vale.ini` or `_vale.ini`.
-StylesPath = path/to/some/directory
-MinAlertLevel = warning # suggestion, warning or error
+StylesPath = styles
+MinAlertLevel = suggestion
 
-# Only Markdown and .txt files; change to whatever you're using.
-[*.{md,txt}]
-# List of styles to load.
-BasedOnStyles = Google
+Packages = Google
+
+[*]
+BasedOnStyles = Vale, Google
 ```
 
-See [Usage](https://github.com/errata-ai/vale/#usage) for more information.
+See [Packages](https://vale.sh/hub/google/) for more information.
 
 ## Repository Structure
 

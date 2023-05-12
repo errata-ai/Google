@@ -48,7 +48,12 @@ jobs:
         env:
           VALE_VERSION: 2.26.0
 
-      - name: Test
+      - name: Features
         run: bundle exec cucumber --format progress
+        env:
+          CUCUMBER_PUBLISH_QUIET: true
+
+      - name: Integration
+        run: vale README.md
         env:
           CUCUMBER_PUBLISH_QUIET: true

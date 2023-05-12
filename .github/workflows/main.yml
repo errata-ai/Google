@@ -55,5 +55,3 @@ jobs:
 
       - name: Integration
         run: vale README.md
-        env:
-          CUCUMBER_PUBLISH_QUIET: true

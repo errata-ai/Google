@@ -13,10 +13,12 @@ jobs:
 
       - run: zip -r Google.zip Google -x "*.DS_Store"
 
-      - uses: actions/upload-artifact@v3
+      - name: Upload style to release
+        uses: svenstaro/upload-release-action@v2
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          path: Google.zip
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: Google.zip
 
   cucumber:
     runs-on: ubuntu-latest

@@ -39,7 +39,7 @@ Feature: Rules
     When I test "Contractions"
     Then the output should contain exactly:
       """
-      test.md:3:1:Google.Contractions:Feel free to use 'it's' instead of 'It is'.
+      test.md:3:1:Google.Contractions:Use 'it's' instead of 'It is'.
       """
 
   Scenario: Use of dashes
@@ -88,25 +88,25 @@ Feature: Rules
       test.md:11:46:Google.EmDash:Don't put a space before or after a dash.
       test.md:13:24:Google.EmDash:Don't put a space before or after a dash.
       test.md:13:25:Google.EnDash:Use an em dash ('—') instead of '–'.
-      test.md:13:32:Google.Exclamation:Don't use exclamation points in text.
+      test.md:13:27:Google.Exclamation:Don't use exclamation points in text.
       test.md:15:5:Google.Ellipses:In general, don't use an ellipsis.
-      test.md:17:11:Google.Exclamation:Don't use exclamation points in text.
+      test.md:17:8:Google.Exclamation:Don't use exclamation points in text.
       test.md:19:18:Google.LyHyphens:' publicly-' doesn't need a hyphen.
       test.md:23:13:Google.Parens:Use parentheses judiciously.
       test.md:25:24:Google.Quotes:Commas and periods go inside quotation marks.
       test.md:27:34:Google.Semicolons:Use semicolons judiciously.
-      test.md:27:44:Google.Exclamation:Don't use exclamation points in text.
+      test.md:27:43:Google.Exclamation:Don't use exclamation points in text.
       test.md:29:1:Google.OxfordComma:Use the Oxford comma in 'Apples, pears or'.
-      test.md:33:5:Google.Exclamation:Don't use exclamation points in text.
+      test.md:33:1:Google.Exclamation:Don't use exclamation points in text.
       test.md:37:21:Google.Spacing:'y. T' should have one space.
-      test.md:39:42:Google.Exclamation:Don't use exclamation points in text.
+      test.md:39:36:Google.Exclamation:Don't use exclamation points in text.
       """
 
   Scenario: Foreign words
     When I test "Foreign"
     Then the output should contain exactly:
       """
-      test.md:3:31:Google.Latin:Use 'that is' instead of 'i.e.,'.
+      test.md:3:31:Google.Latin:Use 'that is' instead of 'i.e.'.
       """
 
   Scenario: Heading styles

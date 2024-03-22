@@ -1,4 +1,4 @@
-# Test: modern documentation management
+# Test: Modern documentation management
 
 # This is a heading
 

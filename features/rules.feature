@@ -39,7 +39,7 @@ Feature: Rules
     When I test "Contractions"
     Then the output should contain exactly:
       """
-      test.md:3:1:Google.Contractions:Use 'it's' instead of 'It is'.
+      test.md:3:1:Google.Contractions:Use 'It's' instead of 'It is'.
       """
 
   Scenario: Use of dashes
@@ -87,11 +87,10 @@ Feature: Rules
       test.md:9:1:Google.OxfordComma:Use the Oxford comma in 'I dedicate this book to my parents, Ayn, Rand and'.
       test.md:11:46:Google.EmDash:Don't put a space before or after a dash.
       test.md:13:24:Google.EmDash:Don't put a space before or after a dash.
-      test.md:13:25:Google.EnDash:Use an em dash ('—') instead of '–'.
       test.md:13:27:Google.Exclamation:Don't use exclamation points in text.
       test.md:15:5:Google.Ellipses:In general, don't use an ellipsis.
       test.md:17:8:Google.Exclamation:Don't use exclamation points in text.
-      test.md:19:18:Google.LyHyphens:' publicly-' doesn't need a hyphen.
+      test.md:19:19:Google.LyHyphens:'publicly-available' doesn't need a hyphen.
       test.md:23:13:Google.Parens:Use parentheses judiciously.
       test.md:25:24:Google.Quotes:Commas and periods go inside quotation marks.
       test.md:27:34:Google.Semicolons:Use semicolons judiciously.

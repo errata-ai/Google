@@ -39,7 +39,7 @@ Feature: Rules
     When I test "Contractions"
     Then the output should contain exactly:
       """
-      test.md:3:1:Google.Contractions:Use 'It's' instead of 'It is'.
+      test.md:3:1:Google.Contractions:Use 'it's' instead of 'It is'.
       """
 
   Scenario: Use of dashes

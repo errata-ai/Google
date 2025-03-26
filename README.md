@@ -18,7 +18,7 @@ Packages = Google
 BasedOnStyles = Vale, Google
 ```
 
-See [Packages](https://vale.sh/hub/google/) for more information.
+See [Packages](https://vale.sh/docs/keys/packages) for more information.
 
 ## Repository Structure
 
